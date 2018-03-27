@@ -22,10 +22,11 @@ describe(<Game />, () => {
 		expect(wrapper.state('auralStatus')).toEqual('');
 	})
 
-	// it('Should have correctAnswer state property initially', () => {
-	// 	const wrapper = shallow(<Game />);
-	// 	expect(wrapper.state('correctAnswer').type()).toEqual('String');
-	// })
+	it('Should have correctAnswer state property initially', () => {
+		const wrapper = shallow(<Game />);
+		expect(wrapper.state('correctAnswer')).toBeLessThanOrEqual(100);
+		expect(wrapper.state('correctAnswer')).toBeGreaterThanOrEqual(1);
+	})
 
 	it('Restart game on execution of restartGame func', () => {
 		const wrapper = shallow(<Game />);
