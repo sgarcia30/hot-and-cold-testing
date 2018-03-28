@@ -17,4 +17,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Extra Info
-/app_extra_info
+/app_extra_info.netlify
